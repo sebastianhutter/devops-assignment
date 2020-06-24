@@ -35,7 +35,7 @@ Please send public gpg key to [us](mailto://#). We will use the gpg key to encry
 
 ### Fork the repository
 
-Create a [fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo]) of this repository.
+Create a [fork](https://guides.github.com/activities/forking/) of this repository.
 
 You can commit your code and notes into your fork - this makes sharing your results easy and convenient.
 
