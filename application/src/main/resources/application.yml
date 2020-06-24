@@ -1,0 +1,11 @@
+
+app:
+  banner:
+    label: "LOCAL"
+    color: "DarkViolet"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health"
