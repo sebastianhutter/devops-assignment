@@ -34,4 +34,5 @@ logs:
 	@$(mvn) docker:logs -Ddocker.follow 
 
 clean: 
+	@-docker volume rm maven-repo
 	@$(mvn) clean
