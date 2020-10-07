@@ -32,8 +32,22 @@ gpg --output kubeconfig.gpg --encrypt --recipient <candidatesgpgkeyid> kubeconfi
 
 ## Cleanup
 
-After the assingment is complete destroy the kubernetes cluster
+After the assingment is complete remove the loadbalancer and the kubernetes cluster.
 
+To remove the loadbalancer remove the corresponding service from the kubernetes cluster
+```bash
+# list all services and check for "loadbalancer" services
+kubectl get services
+NAME                   TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)        AGE
+demoapp-loadbalancer   LoadBalancer   10.245.248.14   46.101.68.163   80:31782/TCP   6m37s
+kubernetes             ClusterIP      10.245.0.1      <none>          443/TCP        16m
+
+# delete the service
+kubectl delete service demoapp-loadbalancer
+service "demoapp-loadbalancer" deleted
+```
+
+Next, delete the whole cluster from the digitalocean account
 ```bash
 DIGITALOCEAN_ACCESS_TOKEN=mycoolaccesstoken ./destroy.py
 ```
