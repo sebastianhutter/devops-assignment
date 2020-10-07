@@ -36,3 +36,4 @@ After the assingment is complete destroy the kubernetes cluster
 
 ```bash
 DIGITALOCEAN_ACCESS_TOKEN=mycoolaccesstoken ./destroy.py
+```
