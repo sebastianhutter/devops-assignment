@@ -31,7 +31,7 @@ You need the following software installed on your machine to complete the assign
 
 We prepared a kubernetes cluster for the assignment.
 
-Please send public gpg key to [us](mailto://#). We will use the gpg key to encrypt the kubeconfig and send it to you.
+Please send public gpg key to [us](mailto://cloud+devopsassignment@foryouandyourcustomers.com). We will use the gpg key to encrypt the kubeconfig and send it to you.
 
 ### Fork the repository
 
